@@ -1,0 +1,534 @@
+
+.hero {
+    height: 100vh;
+    background: url('../images/hero.webp') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 12px;
+    animation: fadeInUp 1.5s ease;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: #e63946;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #d62828;
+    transform: translateY(-3px);
+}
+
+
+.services {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+.services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.services .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin: 16px 0 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    padding: 0 20px 20px;
+    color: #555;
+}
+
+
+.about-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.about-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about-image {
+    height: 400px;
+    display: flex;
+    width: 100%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+
+.contact-section {
+    padding: 60px 0;
+    background-color: #f0f4f8;
+}
+
+.contact-body {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-info {
+    flex: 1 1 400px;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 8px;
+}
+
+.contact-form {
+    flex: 1 1 500px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+.faq-section {
+    padding: 60px 15px;
+    background-color: #f9fafb;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-question {
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question::after {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #555;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    padding: 15px 20px 20px;
+    max-height: 300px;
+}
+
+
+.price-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.price-section {
+    padding: 50px 0;
+}
+
+.price-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.price-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.price-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.price-card .price {
+    font-size: 2rem;
+    color: #0a84ff;
+    margin: 15px 0;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.price-card ul li {
+    margin: 8px 0;
+    color: #555;
+}
+
+.price-card button {
+    background: #0a84ff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.price-card button:hover {
+    background: #005ecb;
+}
+
+.price-card.destaque {
+    border: 2px solid #0a84ff;
+}
+
+.cookie-section {
+    padding: 0 20px;
+    margin-top: 100px;
+}
+
+.block-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0a0a23;
+}
+
+.block-body h2 {
+    color: #0a84ff;
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+.block-body p {
+    line-height: 1.7;
+    margin: 15px 0;
+}
+
+.block-body ul li {
+    line-height: 1.7;
+    margin: 5px 0;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .hero .btn {
+        font-size: 1.1rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+
+    .faq-title {
+        font-size: 2rem;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+    }
+
+    .block-body h2 {
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1rem;
+    }
+
+
+
+    .hero p {
+        font-size: 0.7rem;
+    }
+
+    .hero .btn {
+        font-size: 1.1rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+
+    .faq-title {
+        font-size: 2rem;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+    }
+
+    .block-body h2 {
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+
+    .contact-body {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        flex: unset;
+    }
+
+    .hero-content {
+        padding: 20px;
+
+    }
+
+    .price-cards {
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    }
+
+}
+
+@media (max-width: 568px) {
+
+    .price-cards {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .contact-form {
+        padding: 10px;
+        flex: 1 1 450px;
+    }
+
+    .cookie-section {
+        padding: 0;
+        margin-top: 100px;
+    }
+}
